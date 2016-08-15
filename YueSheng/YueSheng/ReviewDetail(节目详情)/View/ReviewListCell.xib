@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reviewList" rowHeight="51" id="KGk-i7-Jjw" customClass="ReviewListCell">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6I-YS-Woo">
+                        <rect key="frame" x="10" y="0.0" width="212" height="50.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-LR-2OT">
+                        <rect key="frame" x="397" y="15" width="20" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="wFM-Km-54L"/>
+                        </constraints>
+                        <state key="normal" image="icon_play_little"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSC-LJ-LGQ">
+                        <rect key="frame" x="237" y="0.0" width="150" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="NgC-Cv-rBn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFJ-e9-7gS">
+                        <rect key="frame" x="10" y="49" width="412" height="0.5"/>
+                        <color key="backgroundColor" red="0.73678188131313127" green="0.73678188131313127" blue="0.73678188131313127" alpha="0.22313133445945946" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mJ7-i5-job"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="fFJ-e9-7gS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="BBW-Oa-Prv"/>
+                    <constraint firstAttribute="bottom" secondItem="Goi-LR-2OT" secondAttribute="bottom" constant="15" id="MW3-Iq-mej"/>
+                    <constraint firstItem="wSC-LJ-LGQ" firstAttribute="leading" secondItem="b6I-YS-Woo" secondAttribute="trailing" constant="10" id="TIi-8V-MeZ"/>
+                    <constraint firstAttribute="trailing" secondItem="fFJ-e9-7gS" secondAttribute="trailing" constant="5" id="Ycl-sg-tcU"/>
+                    <constraint firstItem="Goi-LR-2OT" firstAttribute="leading" secondItem="wSC-LJ-LGQ" secondAttribute="trailing" constant="10" id="aUF-sz-Tnd"/>
+                    <constraint firstAttribute="bottom" secondItem="wSC-LJ-LGQ" secondAttribute="bottom" id="cdD-P6-VCg"/>
+                    <constraint firstItem="b6I-YS-Woo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cte-Ny-aIC"/>
+                    <constraint firstAttribute="bottom" secondItem="b6I-YS-Woo" secondAttribute="bottom" id="dyM-4G-VPx"/>
+                    <constraint firstItem="wSC-LJ-LGQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lJh-f0-KwO"/>
+                    <constraint firstAttribute="bottom" secondItem="fFJ-e9-7gS" secondAttribute="bottom" id="lh5-nD-f3o"/>
+                    <constraint firstAttribute="trailing" secondItem="Goi-LR-2OT" secondAttribute="trailing" constant="10" id="ogS-mn-awe"/>
+                    <constraint firstItem="b6I-YS-Woo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="p6U-Ug-WrN"/>
+                    <constraint firstItem="Goi-LR-2OT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xHI-Ut-0ht"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14653716216216217" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="timeLabel" destination="wSC-LJ-LGQ" id="hgX-Xz-88B"/>
+                <outlet property="titleLabel" destination="b6I-YS-Woo" id="F8i-eu-3G8"/>
+            </connections>
+            <point key="canvasLocation" x="379.5" y="238"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_play_little" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+//
+//  PrefixHeader.pch
+//  YueSheng
+//
+//  Created by yellow on 16/7/15.
+//  Copyright © 2016年 yellow. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+
+#define Angle2Radian(angle) ((angle) / 180.0 * M_PI)
+#define mainColor [UIColor colorWithRed:246/255.0 green:246/255.0 blue:245/255.0 alpha:1]
+
+// 颜色
+#define YWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define YWColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define YWRandomColor YWColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+//YWLog
+#define YWLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+//屏幕宽高，以及宽高比
+#define Wi [UIScreen mainScreen].bounds.size.width
+#define He [UIScreen mainScreen].bounds.size.height
+#define Wiscale (float)[UIScreen mainScreen].bounds.size.width / 320
+#define Hescale (float)[UIScreen mainScreen].bounds.size.height / 568
+
+/**
+ *  系统版本
+ */
+#define SYSTEMVERSION [[UIDevice currentDevice].systemVersion doubleValue]
+#define iOS6 (6.0 <= iOSVersion < 7.0)
+#define iOS7 (7.0 <= iOSVersion < 8.0)
+#define iOS8 (8.0 <= iOSVersion < 9.0)
+#define iOS9 (iOSVersion >= 9.0)
+
+#define loginID @"login"
+
+#define accountID @"account"
+
+#define uidID @"uid"
+
+#define iconUrl @"iconUrl"
+
+#define domainURL @"http://app.etz927.com/"
+
+#import "YWMainViewController.h"
+
+#import "AFNetworking.h"
+
+#import "MBProgressHUD.h"
+
+#import "MJExtension.h"
+
+#import "MJRefresh.h"
+
+#import "UIImageView+WebCache.h"
+
+#import "YWHttpTool.h"
+
+#import "MBProgressHUD+MJ.h"
+
+//#import "GiFHUD.h"
+
+#import "Masonry.h"
+
+#import "RegularTools.h"
+
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIImage+MJ.h"
+#import "StringSize.h"
+#import "UINavigationBar+Awesome.h"

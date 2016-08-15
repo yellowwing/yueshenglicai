@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0wO-9b-8GU" customClass="VedioMainPageView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXB-9C-hp4" customClass="ColumnView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-3a-gUs">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ge5-20-0CN">
+                                <size key="itemSize" width="80" height="40"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="0wO-9b-8GU" id="c3A-24-qyh"/>
+                                <outlet property="delegate" destination="0wO-9b-8GU" id="RfG-Sw-hbZ"/>
+                            </connections>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHs-ea-Ps3">
+                            <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.15647630066255047" green="0.15876700846996541" blue="0.1704930741020203" alpha="0.5117979307432432" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="xIS-10-amz"/>
+                            </constraints>
+                            <state key="normal" image="title_left_item"/>
+                            <connections>
+                                <action selector="customBtnClick" destination="0wO-9b-8GU" eventType="touchUpInside" id="lt0-FX-yBE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="kEZ-3a-gUs" secondAttribute="bottom" id="6tZ-3D-QpE"/>
+                        <constraint firstAttribute="trailing" secondItem="UHs-ea-Ps3" secondAttribute="trailing" id="B3Z-Gw-7I8"/>
+                        <constraint firstAttribute="bottom" secondItem="UHs-ea-Ps3" secondAttribute="bottom" id="N1x-jA-Isp"/>
+                        <constraint firstItem="kEZ-3a-gUs" firstAttribute="leading" secondItem="FXB-9C-hp4" secondAttribute="leading" id="eeb-PQ-lKc"/>
+                        <constraint firstAttribute="height" constant="40" id="jMZ-HB-gyO"/>
+                        <constraint firstItem="UHs-ea-Ps3" firstAttribute="leading" secondItem="kEZ-3a-gUs" secondAttribute="trailing" id="lZH-zX-etp"/>
+                        <constraint firstItem="kEZ-3a-gUs" firstAttribute="top" secondItem="FXB-9C-hp4" secondAttribute="top" id="nQJ-hp-i2E"/>
+                        <constraint firstItem="UHs-ea-Ps3" firstAttribute="top" secondItem="FXB-9C-hp4" secondAttribute="top" id="sXJ-ZC-CiH"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CtD-Ep-qjQ">
+                    <rect key="frame" x="0.0" y="40" width="320" height="528"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IVl-Mp-8TE">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="0wO-9b-8GU" id="f1t-Uo-UHx"/>
+                        <outlet property="delegate" destination="0wO-9b-8GU" id="6HT-X8-Nin"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CtD-Ep-qjQ" secondAttribute="bottom" id="6Ml-xR-Swl"/>
+                <constraint firstAttribute="trailing" secondItem="FXB-9C-hp4" secondAttribute="trailing" id="FDo-Op-sq1"/>
+                <constraint firstItem="CtD-Ep-qjQ" firstAttribute="top" secondItem="FXB-9C-hp4" secondAttribute="bottom" id="g9R-P3-DUA"/>
+                <constraint firstItem="CtD-Ep-qjQ" firstAttribute="leading" secondItem="0wO-9b-8GU" secondAttribute="leading" id="iNQ-R0-k8k"/>
+                <constraint firstItem="FXB-9C-hp4" firstAttribute="top" secondItem="0wO-9b-8GU" secondAttribute="top" id="plw-BB-KeQ"/>
+                <constraint firstItem="FXB-9C-hp4" firstAttribute="leading" secondItem="0wO-9b-8GU" secondAttribute="leading" id="rmh-mp-hG0"/>
+                <constraint firstAttribute="trailing" secondItem="CtD-Ep-qjQ" secondAttribute="trailing" id="y7w-fI-HCy"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="columnView" destination="kEZ-3a-gUs" id="iTZ-JI-VkG"/>
+                <outlet property="pageView" destination="CtD-Ep-qjQ" id="RM8-nf-m8h"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="315"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="title_left_item" width="34" height="34"/>
+    </resources>
+</document>

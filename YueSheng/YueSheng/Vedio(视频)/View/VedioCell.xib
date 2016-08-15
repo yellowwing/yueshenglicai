@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="vedio" id="gTV-IL-0wX" customClass="VedioCell">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="220"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-Z2-U92">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="220"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgF-gV-XnQ">
+                        <rect key="frame" x="0.0" y="180" width="156" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1F-SR-r0U">
+                                <rect key="frame" x="10" y="5" width="136" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45233319256756754" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="m1F-SR-r0U" firstAttribute="leading" secondItem="hgF-gV-XnQ" secondAttribute="leading" constant="10" id="GMD-wJ-pf4"/>
+                            <constraint firstAttribute="bottom" secondItem="m1F-SR-r0U" secondAttribute="bottom" constant="5" id="h1c-3C-LFG"/>
+                            <constraint firstAttribute="height" constant="40" id="vyZ-6R-zPo"/>
+                            <constraint firstAttribute="trailing" secondItem="m1F-SR-r0U" secondAttribute="trailing" constant="10" id="xHo-mV-OBV"/>
+                            <constraint firstItem="m1F-SR-r0U" firstAttribute="top" secondItem="hgF-gV-XnQ" secondAttribute="top" constant="5" id="z2b-lB-eYz"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_play" translatesAutoresizingMaskIntoConstraints="NO" id="vTp-67-leg">
+                        <rect key="frame" x="10" y="30" width="136" height="140"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="vTp-67-leg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="AX8-iO-zkt"/>
+                <constraint firstItem="wHA-Z2-U92" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CvE-7J-5wl"/>
+                <constraint firstAttribute="bottom" secondItem="hgF-gV-XnQ" secondAttribute="bottom" id="S6z-s2-eMk"/>
+                <constraint firstItem="wHA-Z2-U92" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Tkb-Zk-ll3"/>
+                <constraint firstItem="hgF-gV-XnQ" firstAttribute="top" secondItem="vTp-67-leg" secondAttribute="bottom" constant="10" id="W2o-eo-N7y"/>
+                <constraint firstItem="hgF-gV-XnQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zjj-JN-gso"/>
+                <constraint firstAttribute="bottom" secondItem="wHA-Z2-U92" secondAttribute="bottom" id="bzW-l5-fa6"/>
+                <constraint firstAttribute="trailing" secondItem="wHA-Z2-U92" secondAttribute="trailing" id="fgx-1d-wH4"/>
+                <constraint firstAttribute="trailing" secondItem="hgF-gV-XnQ" secondAttribute="trailing" id="isL-ra-LXY"/>
+                <constraint firstItem="vTp-67-leg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qvo-nu-iUk"/>
+                <constraint firstAttribute="trailing" secondItem="vTp-67-leg" secondAttribute="trailing" constant="10" id="rlw-vg-L65"/>
+            </constraints>
+            <size key="customSize" width="156" height="220"/>
+            <connections>
+                <outlet property="contentLabel" destination="m1F-SR-r0U" id="4iy-Xs-t3s"/>
+                <outlet property="iconView" destination="wHA-Z2-U92" id="YfZ-5V-5TZ"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="299"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_play" width="48" height="48"/>
+    </resources>
+</document>

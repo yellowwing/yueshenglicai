@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PmI-E8-Zek" customClass="ReviewDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-CB-2DX">
+                    <rect key="frame" x="20" y="10" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kdt-CB-2DX" secondAttribute="height" multiplier="1:1" id="Gs5-aV-fFy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHg-WB-7m5">
+                    <rect key="frame" x="140" y="40" width="169.5" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coQ-mM-RGH">
+                    <rect key="frame" x="150" y="85" width="160" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8q-eT-7fP">
+                    <rect key="frame" x="140" y="80" width="170" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Y8q-eT-7fP" secondAttribute="trailing" constant="10" id="5xo-M8-AkD"/>
+                <constraint firstItem="Y8q-eT-7fP" firstAttribute="leading" secondItem="kdt-CB-2DX" secondAttribute="trailing" constant="20" id="C1d-WL-2fC"/>
+                <constraint firstAttribute="trailing" secondItem="coQ-mM-RGH" secondAttribute="trailing" constant="10" id="JOp-Lo-9hz"/>
+                <constraint firstItem="coQ-mM-RGH" firstAttribute="leading" secondItem="kdt-CB-2DX" secondAttribute="trailing" constant="20" id="KRF-jq-uv3"/>
+                <constraint firstAttribute="trailing" secondItem="iHg-WB-7m5" secondAttribute="trailing" constant="10" id="L7k-Nq-z7z"/>
+                <constraint firstItem="kdt-CB-2DX" firstAttribute="top" secondItem="PmI-E8-Zek" secondAttribute="top" constant="20" id="NZi-z2-zDI"/>
+                <constraint firstItem="coQ-mM-RGH" firstAttribute="centerY" secondItem="PmI-E8-Zek" secondAttribute="centerY" constant="10" id="XDU-8g-zGw"/>
+                <constraint firstAttribute="bottom" secondItem="kdt-CB-2DX" secondAttribute="bottom" constant="20" id="bG8-f0-fl1"/>
+                <constraint firstItem="iHg-WB-7m5" firstAttribute="leading" secondItem="kdt-CB-2DX" secondAttribute="trailing" constant="10" id="deV-wr-paw"/>
+                <constraint firstItem="kdt-CB-2DX" firstAttribute="centerY" secondItem="PmI-E8-Zek" secondAttribute="centerY" id="eAi-v0-OK8"/>
+                <constraint firstItem="Y8q-eT-7fP" firstAttribute="top" secondItem="iHg-WB-7m5" secondAttribute="bottom" constant="20" id="ng5-tp-z4Z"/>
+                <constraint firstItem="kdt-CB-2DX" firstAttribute="leading" secondItem="PmI-E8-Zek" secondAttribute="leading" constant="20" id="qtc-RL-mxo"/>
+                <constraint firstItem="coQ-mM-RGH" firstAttribute="top" secondItem="iHg-WB-7m5" secondAttribute="bottom" constant="20" id="tFx-Dh-bpI"/>
+                <constraint firstAttribute="trailing" secondItem="iHg-WB-7m5" secondAttribute="trailing" constant="10" id="ule-Z1-IVd"/>
+                <constraint firstItem="Y8q-eT-7fP" firstAttribute="top" secondItem="coQ-mM-RGH" secondAttribute="bottom" constant="10" id="wTY-Lb-IvL"/>
+                <constraint firstItem="iHg-WB-7m5" firstAttribute="leading" secondItem="kdt-CB-2DX" secondAttribute="trailing" constant="20" id="wn1-g7-zMe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="deV-wr-paw"/>
+                    <exclude reference="ng5-tp-z4Z"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="compereLabel" destination="coQ-mM-RGH" id="v0q-o9-Y40"/>
+                <outlet property="iconView" destination="kdt-CB-2DX" id="ep6-X9-HT4"/>
+                <outlet property="nameLabel" destination="iHg-WB-7m5" id="jKj-r0-cC5"/>
+                <outlet property="timeLabel" destination="Y8q-eT-7fP" id="v48-u9-v8O"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="445"/>
+        </view>
+    </objects>
+</document>
